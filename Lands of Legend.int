@@ -13,7 +13,7 @@ PACKAGE_DME_NAME: C:\Documents and Settings\Martyn Brockett\Desktop\Byond Games\
 LAST_COMPILE_VERSION: 510.1347
 PACKAGE_DME_START: 
 PACKAGE_TYPE: 0
-WINDOW: Code\vars.dm;Code\world.dm;Code\client.dm;Code\proc.dm;Code\defines.dm;Code\Mobs\mob_vars.dm;Combat.dm;Mobs.dm;Code\Mobs\mob_code.dm;Code\Mobs\npcs.dm;Code\Turfs\turf_vars.dm;Code\global.dm;Code\Objects\object_vars.dm;Turfs.dm;Code\Turfs\areas.dm;Code\Turfs\turf_code.dm;Objs.dm
+WINDOW: Code\Mobs\mob_code.dm;DoList.dm;Code\global.dm;Code\proc_txt.dm;Code\Turfs\misc.dm;Code\Turfs\walls.dm;Code\Mobs\combat.dm;Code\Mobs\AI.dm;Code\Mobs\death_revive_resurrection.dm;Code\Mobs\character_creation.dm;Code\Mobs\gui_menu_display.dm;Code\Mobs\languages.dm;Code\Mobs\afflictions.dm;Code\Mobs\ranks.dm;Code\client.dm;Objs.dm
 PACKAGE_DME_INFO: 
 PACKAGE_RSC_CLEANCHECK: OFF
 FILE: Objs.dm
