@@ -2,21 +2,22 @@
 /*
 PACKAGE_DMB_HUB: Ginseng.LandsofLegend
 LAST_COMPILE_TIME: 1476413726
+DIR: Code Code\Mobs Code\Objects Code\Turfs 
 PACKAGE_RSC_NAME: C:\Documents and Settings\Martyn Brockett\Desktop\Byond Games\Lands of Legend - New & Recent\Lands of Legend_rsc.zip
 AUTO_FILE_DIR: ON
-PACKAGE_DME_CLEANCHECK: OFF
-PACKAGE_DMB_CLEANCHECK: ON
 PACKAGE_DMB_INFO: 
+PACKAGE_DMB_CLEANCHECK: ON
+PACKAGE_DME_CLEANCHECK: OFF
 MAP_ICON_TYPE: 0
 PACKAGE_DME_NAME: C:\Documents and Settings\Martyn Brockett\Desktop\Byond Games\Lands of Legend - New & Recent\Lands of Legend_src.zip
 LAST_COMPILE_VERSION: 510.1347
-PACKAGE_TYPE: 0
 PACKAGE_DME_START: 
-WINDOW: DoList.dm;World.dm;MobProcs.dm;Objs.dm;Vars.dm;Mobs.dm;Logs.dm;Login.dm;config.dm;txtprocs.dm
-PACKAGE_RSC_CLEANCHECK: OFF
+PACKAGE_TYPE: 0
+WINDOW: Code\vars.dm;Code\world.dm;Code\client.dm;Code\proc.dm;Code\defines.dm;Code\Mobs\mob_vars.dm;Combat.dm;Mobs.dm;Code\Mobs\mob_code.dm;Code\Mobs\npcs.dm;Code\Turfs\turf_vars.dm;Code\global.dm;Code\Objects\object_vars.dm;Turfs.dm;Code\Turfs\areas.dm;Code\Turfs\turf_code.dm;Objs.dm
 PACKAGE_DME_INFO: 
-FILE: config.dm
-PACKAGE_DME_DEMO: 
+PACKAGE_RSC_CLEANCHECK: OFF
+FILE: Objs.dm
 PACKAGE_DMB_NAME: C:\Users\Aaron\Desktop\Desktop\BYOND projects\Lands of Legend project folder\LoL Version 0.63.zip
+PACKAGE_DME_DEMO: 
 */
 // END_INTERNALS

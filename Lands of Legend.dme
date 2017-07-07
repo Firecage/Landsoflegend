@@ -13,7 +13,6 @@
 // END_PREFERENCES
 
 // BEGIN_INCLUDE
-#include "AntiSpam.dm"
 #include "Combat.dm"
 #include "config.dm"
 #include "Crafting.dm"
@@ -26,9 +25,20 @@
 #include "Text On Screen.dm"
 #include "Turfs.dm"
 #include "txtprocs.dm"
-#include "Vars.dm"
-#include "World.dm"
 #include "OldSmallWorld.dmm"
 #include "Macros.dms"
+#include "Code\client.dm"
+#include "Code\defines.dm"
+#include "Code\global.dm"
+#include "Code\proc.dm"
+#include "Code\vars.dm"
+#include "Code\world.dm"
+#include "Code\Mobs\mob_code.dm"
+#include "Code\Mobs\mob_vars.dm"
+#include "Code\Mobs\npcs.dm"
+#include "Code\Objects\object_vars.dm"
+#include "Code\Turfs\areas.dm"
+#include "Code\Turfs\turf_code.dm"
+#include "Code\Turfs\turf_vars.dm"
 // END_INCLUDE
 
