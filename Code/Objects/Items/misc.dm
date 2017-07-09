@@ -435,12 +435,12 @@
 				usr << "<b>You cant pick that item up!<br>"
 				return
 
-/obj/Items/Misc/Bones/GraveStone
+/obj/Items/Misc/GraveStone
 	icon = 'misc.dmi'
 	icon_state = "grave1"
 	suffix = "Stuck"
 
-/obj/Items/Misc/Bones/GraveStone/New()
+/obj/Items/Misc/GraveStone/New()
 	var/I = rand(1,4)
 	src.icon_state = "grave[I]"
 

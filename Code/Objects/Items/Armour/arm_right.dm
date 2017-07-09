@@ -553,7 +553,7 @@
 	BaseMaterial = "Metal"
 	Weight = 6
 
-/obj/Items/Armour/RightArm/GiantChainGloveRightNew()
+/obj/Items/Armour/RightArm/GiantChainGloveRight/New()
 	src.icon_state = src.CarryState
 	src.layer = 4
 

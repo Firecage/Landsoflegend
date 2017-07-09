@@ -147,15 +147,15 @@
 	icon_state = "astral strand"
 
 /obj/Misc/OtherWorldly/AstralStrand/New()
-		var/D = rand(1,4)
-		if(D == 1)
-			src.dir = NORTH
-		if(D == 2)
-			src.dir = SOUTH
-		if(D == 3)
-			src.dir = EAST
-		if(D == 4)
-			src.dir = WEST
+	var/D = rand(1,4)
+	if(D == 1)
+		src.dir = NORTH
+	if(D == 2)
+		src.dir = SOUTH
+	if(D == 3)
+		src.dir = EAST
+	if(D == 4)
+		src.dir = WEST
 
 /obj/Misc/OtherWorldly/AstralStrands
 	icon = 'terrain.dmi'

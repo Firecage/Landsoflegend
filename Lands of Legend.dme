@@ -6,6 +6,10 @@
 // END_INTERNALS
 // BEGIN_FILE_DIR
 #define FILE_DIR .
+#define FILE_DIR "Icons"
+#define FILE_DIR "Icons/hud"
+#define FILE_DIR "Icons/items"
+#define FILE_DIR "Icons/mob_types"
 #define FILE_DIR "Sounds"
 // END_FILE_DIR
 
