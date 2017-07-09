@@ -449,3 +449,62 @@
 		src.overlays -= /obj/Misc/FireLarge/
 		return
 	spawn(rand(25,30)) src.Burn(Dis)
+
+/atom/MouseDrag(var/obj/Over_Object,var/turf/Turf_Start,var/obj/Over_Loc)
+	if(ismob(src))
+		var/mob/M = src
+		if(usr.CanUseTK && usr.Function == "Interact" && usr.client.eye == usr && M.Sleeping == 0 && usr.Sleeping == 0 && usr.Sleep >= 0 && usr.Dead == 0 && usr.Fainted == 0)
+			M.LastLoc = M.loc
+			var/CanLift = 0
+			var/CanResist = 0
+			CanLift = prob(100 - M.Weight / 3)
+			CanResist = prob(10 + M.Intelligence)
+			usr.Sleep -= 0.1
+			usr.Intelligence += 0.001
+			if(CanLift && CanResist == 0)
+				if(Over_Loc in range(1,M.LastLoc))
+					M.UnderTK = usr
+					M.overlays += /obj/Misc/SpellEffects/Dispel
+					usr.overlays += /obj/Misc/SpellEffects/Dispel
+					spawn(10)
+						if(usr)
+							usr.overlays -= /obj/Misc/SpellEffects/Dispel
+						if(M)
+							M.overlays -= /obj/Misc/SpellEffects/Dispel
+					M.Move(Over_Loc,SOUTH)
+					if(M)
+						M.UnderTK = null
+				else
+					M.loc = M.LastLoc
+	if(isobj(src))
+		var/obj/O = src
+		if(usr.CanUseTK && usr.Function == "Interact" && O.Type != "Sleep" && usr.Sleeping == 0 && usr.Sleep >= 0 && O.suffix == null && usr.Dead == 0 && usr.Fainted == 0)
+			if(Over_Loc)
+				if(Over_Loc.density == 0)
+					O.LastLoc = O.loc
+					var/CanLift = 0
+					CanLift = prob(100 - O.Weight / 3)
+					usr.Sleep -= 0.05
+					usr.Intelligence += 0.001
+					if(usr.client.eye != usr)
+						usr.Sleep -= 0.05
+					if(CanLift)
+						if(Over_Loc in range(1,O.LastLoc))
+							O.overlays += /obj/Misc/SpellEffects/Dispel
+							usr.overlays += /obj/Misc/SpellEffects/Dispel
+							spawn(10)
+								if(usr)
+									usr.overlays -= /obj/Misc/SpellEffects/Dispel
+								if(O)
+									O.overlays -= /obj/Misc/SpellEffects/Dispel
+							O.Move(Over_Loc)
+							for(var/atom/a in range(0,O))
+								if(a.density)
+									O.loc = O.LastLoc
+								if(isobj(a))
+									var/obj/Z = a
+									if(Z.Type == "Hole" && Z.GoesTo)
+										view(6,O) << "<font color = yellow>[O] falls down the Hole!<br>"
+										O.loc = Z.GoesTo
+						else
+							O.loc = O.LastLoc

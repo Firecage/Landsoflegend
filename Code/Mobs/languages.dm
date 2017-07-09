@@ -238,3 +238,36 @@
 		L.WritePercent = 100
 		src.CurrentLanguage = L
 		src.LangKnow += L
+
+/obj/Misc/Languages/Common
+	name = "Common"
+
+/obj/Misc/Languages/Ancient
+	name = "Ancient"
+
+/obj/Misc/Languages/Demonic
+	name = "Demonic"
+
+/obj/Misc/Languages/DarkTongue
+	name = "DarkTongue"
+
+/obj/Misc/Languages/Human
+	name = "Human"
+
+/obj/Misc/Languages/Altherian
+	name = "Altherian"
+
+/obj/Misc/Languages/Stahliteian
+	name = "Stahliteian"
+
+/obj/Misc/Languages/Slithus
+	name = "Slithus"
+
+/obj/Misc/Languages/Wolfen
+	name = "Wolfen"
+
+/obj/Misc/Languages/Scutter
+	name = "Scutter"
+
+/obj/Misc/Languages/Ribbitus
+	name = "Ribbitus"

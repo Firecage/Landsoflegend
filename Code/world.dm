@@ -3,7 +3,7 @@
 	version = 63
 	name = "Lands of Legend - Version 0.63"
 	status = "Lands of Legend - Version 0.63"
-	hub = "Godsring.LandsofLegend"
+	hub = "Ginseng.LandsofLegend"
 	hub_password = ""
 	loop_checks = 0
 	tick_lag = 0.75
