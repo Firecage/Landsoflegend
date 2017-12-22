@@ -1,5 +1,19 @@
 players/*
 logs/*
 config/*
+map/*
 
 ErrorLog.txt
+
+*.mdme
+
+*.dmb
+
+*.rsc
+
+*.lk
+
+*.int
+
+*.backup
+
