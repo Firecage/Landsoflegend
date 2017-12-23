@@ -6,6 +6,7 @@
 // END_INTERNALS
 // BEGIN_FILE_DIR
 #define FILE_DIR .
+#define FILE_DIR "Extras"
 #define FILE_DIR "Icons"
 #define FILE_DIR "Icons/hud"
 #define FILE_DIR "Icons/items"
@@ -17,9 +18,6 @@
 // END_PREFERENCES
 
 // BEGIN_INCLUDE
-#include "DoList.dm"
-#include "OldSmallWorld.dmm"
-#include "Macros.dms"
 #include "Code\client.dm"
 #include "Code\defines.dm"
 #include "Code\global.dm"
@@ -162,5 +160,6 @@
 #include "Code\Turfs\turf_code.dm"
 #include "Code\Turfs\turf_vars.dm"
 #include "Code\Turfs\walls.dm"
+#include "Maps\OldSmallWorld.dmm"
 // END_INCLUDE
 

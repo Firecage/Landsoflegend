@@ -1,7 +1,4 @@
-players/*
 logs/*
-config/*
-map/*
 
 ErrorLog.txt
 
@@ -17,3 +14,4 @@ ErrorLog.txt
 
 *.backup
 
+*.sav
