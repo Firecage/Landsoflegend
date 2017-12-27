@@ -35,6 +35,7 @@
 #include "Code\Huds_UIs_Menus\main_menu.dm"
 #include "Code\Huds_UIs_Menus\race_selection.dm"
 #include "Code\Huds_UIs_Menus\scroll.dm"
+#include "Code\macros\Macros.dms"
 #include "Code\Mobs\afflictions.dm"
 #include "Code\Mobs\AI.dm"
 #include "Code\Mobs\character_creation.dm"
